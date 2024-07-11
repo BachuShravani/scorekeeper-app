@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ping Pong Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="playercard col-6">
+          <img
+            src="https://media.istockphoto.com/id/1425158165/photo/table-tennis-ping-pong-paddles-and-white-ball-on-blue-board.jpg?s=612x612&w=0&k=20&c=KSdi4bEGoxdhaGMnl6CZaqTLbKbobArgrrpLem3oN98="
+            alt="Ping Pong image"
+          />
+          <br />
+          <div class="heading">Ping Pong Score Keeper</div>
+
+          <div class="middle">
+            <h1><span id="p1">0</span> to <span id="p2">0</span></h1>
+            <p>Use the buttons below to keep score</p>
+            <h5>Playing To</h5>
+            <select name="maxscore" id="maxscore" class="form-select">
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select>
+          </div>
+
+          <div class="row buttons">
+            <button class="btn btn-success col-4" id="player1">+1 Player One</button>
+            <button class="btn btn-primary col-4" id="player2">+1 Player Two</button>
+            <button class="btn btn-danger col-4" id="reset">Reset</button>
+          </div>
+        </div>
+        <div class="col-3"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
